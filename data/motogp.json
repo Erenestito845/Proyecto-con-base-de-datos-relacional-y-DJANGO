@@ -1,0 +1,150 @@
+[
+  {
+    "equipo": "Aprilia Racing",
+    "moto": "Aprilia",
+    "imagen": "MB72 JM89.webp",
+    "piloto1": {
+      "dorsal": 72, "nombre": "Marco Bezzechi", "nacion": "Italy",
+      "fecha_nacimiento": "12/11/1998 (27 yrs)", "lugar_nacimiento": "Rimini, Italy"
+    },
+    "piloto2": {
+      "dorsal": 89, "nombre": "Jorge Martín", "nacion": "Spain",
+      "fecha_nacimiento": "29/01/1998 (28 yrs)", "lugar_nacimiento": "Madrid, Spain"
+    }
+  },
+  {
+    "equipo": "Ducati Lenovo Team",
+    "moto": "Ducati",
+    "imagen": "PB63 MM93.jpeg",
+    "piloto1": {
+      "dorsal": 63, "nombre": "Francesco Bagnaia", "nacion": "Italy",
+      "fecha_nacimiento": "14/01/1997 (29 yrs)", "lugar_nacimiento": "Torino, Italy"
+    },
+    "piloto2": {
+      "dorsal": 93, "nombre": "Marc Márquez", "nacion": "Spain",
+      "fecha_nacimiento": "17/02/1993 (33 yrs)", "lugar_nacimiento": "Cervera, Spain"
+    }
+  },
+  {
+    "equipo": "Red Bull KTM Factory Racing",
+    "moto": "KTM",
+    "imagen": "PA37 BB33.jpg",
+    "piloto1": {
+      "dorsal": 37, "nombre": "Pedro Acosta", "nacion": "Spain",
+      "fecha_nacimiento": "25/05/2004 (22 yrs)", "lugar_nacimiento": "Murcia, Spain"
+    },
+    "piloto2": {
+      "dorsal": 33, "nombre": "Brad Binder", "nacion": "South Africa",
+      "fecha_nacimiento": "11/08/1995 (31 yrs)", "lugar_nacimiento": "Potchefstroom, South Africa"
+    }
+  },
+  {
+    "equipo": "Honda HRC Castrol",
+    "moto": "Honda",
+    "imagen": "JM36 LM10.jpg",
+    "piloto1": {
+      "dorsal": 36, "nombre": "Joan Mir", "nacion": "Spain",
+      "fecha_nacimiento": "01/09/1997 (29 yrs)", "lugar_nacimiento": "Palma de Mallorca, Spain"
+    },
+    "piloto2": {
+      "dorsal": 10, "nombre": "Luca Marini", "nacion": "Italy",
+      "fecha_nacimiento": "10/08/1997 (29 yrs)", "lugar_nacimiento": "Urbino, Italy"
+    }
+  },
+  {
+    "equipo": "Monster Energy Yamaha MotoGP",
+    "moto": "Yamaha",
+    "imagen": "FQ20 AR42.webp",
+    "piloto1": {
+      "dorsal": 20, "nombre": "Fabio Quartararo", "nacion": "France",
+      "fecha_nacimiento": "20/04/1999 (27 yrs)", "lugar_nacimiento": "Nice, France"
+    },
+    "piloto2": {
+      "dorsal": 42, "nombre": "Alex Rins", "nacion": "Spain",
+      "fecha_nacimiento": "08/12/1995 (30 yrs)", "lugar_nacimiento": "Barcelona, Spain"
+    }
+  },
+  {
+    "equipo": "SuperFile Trackhouse MotoGP Team",
+    "moto": "Aprilia",
+    "imagen": "RF25 AO79.jpg",
+    "piloto1": {
+      "dorsal": 25, "nombre": "Raul Fernandez", "nacion": "Spain",
+      "fecha_nacimiento": "23/10/2000 (25 yrs)", "lugar_nacimiento": "Madrid, Spain"
+    },
+    "piloto2": {
+      "dorsal": 79, "nombre": "Ai Ogura", "nacion": "Japan",
+      "fecha_nacimiento": "26/01/2001 (25 yrs)", "lugar_nacimiento": "Kiyose, Japan"
+    }
+  },
+  {
+    "equipo": "BK8 Gresini Racing MotoGP",
+    "moto": "Ducati",
+    "imagen": "AM73 FA54.jpg",
+    "piloto1": {
+      "dorsal": 73, "nombre": "Alex Marquez", "nacion": "Spain",
+      "fecha_nacimiento": "23/04/1996 (30 yrs)", "lugar_nacimiento": "Cervera, Spain"
+    },
+    "piloto2": {
+      "dorsal": 54, "nombre": "Fermin Aldeguer", "nacion": "Spain",
+      "fecha_nacimiento": "05/04/2005 (21 yrs)", "lugar_nacimiento": "El Palmar, Spain"
+    }
+  },
+  {
+    "equipo": "Prima Pramac Yamaha MotoGP",
+    "moto": "Yamaha",
+    "imagen": "TR07 JM43.webp",
+    "piloto1": {
+      "dorsal": 7, "nombre": "Toprak Razgatlioglu", "nacion": "Türkiye",
+      "fecha_nacimiento": "16/10/1996 (29 yrs)", "lugar_nacimiento": "Alanya, Türkiye"
+    },
+    "piloto2": {
+      "dorsal": 43, "nombre": "Jack Miller", "nacion": "Australia",
+      "fecha_nacimiento": "18/01/1995 (31 yrs)", "lugar_nacimiento": "Townsville, Australia"
+    }
+  },
+  {
+    "equipo": "Pertamina Enduro VR46 Racing Team",
+    "moto": "Ducati",
+    "imagen": "FM21 FD49.webp",
+    "piloto1": {
+      "dorsal": 21, "nombre": "Franco Morbidelli", "nacion": "Italy",
+      "fecha_nacimiento": "04/12/1994 (31 yrs)", "lugar_nacimiento": "Rome, Italy"
+    },
+    "piloto2": {
+      "dorsal": 49, "nombre": "Fabio Di Gianantonio", "nacion": "Italy",
+      "fecha_nacimiento": "10/10/1998 (27 yrs)", "lugar_nacimiento": "Rome, Italy"
+    }
+  },
+  {
+    "equipo": "Red Bull KTM Tech3",
+    "moto": "KTM",
+    "imagen": "EB23 MV12.jpg",
+    "piloto1": {
+      "dorsal": 23, "nombre": "Enea Bastianini", "nacion": "Italy",
+      "fecha_nacimiento": "30/12/1997 (28 yrs)", "lugar_nacimiento": "Rimini, Italy"
+    },
+    "piloto2": {
+      "dorsal": 12, "nombre": "Maverick Viñales", "nacion": "Spain",
+      "fecha_nacimiento": "12/01/1995 (31 yrs)", "lugar_nacimiento": "Figueres, Spain"
+    }
+  },
+  {
+    "equipo": "CASTROL Honda LCR",
+    "moto": "Honda",
+    "imagen": "JZ5.webp",
+    "piloto1": {
+      "dorsal": 5, "nombre": "Johan Zarco", "nacion": "France",
+      "fecha_nacimiento": "16/07/1990 (36 yrs)", "lugar_nacimiento": "Cannes, France"
+    }
+  },
+  {
+    "equipo": "Pro Honda LCR",
+    "moto": "Honda",
+    "imagen": "DM11.webp",
+    "piloto1": {
+      "dorsal": 11, "nombre": "Diogo Moreira", "nacion": "Brazil",
+      "fecha_nacimiento": "23/04/2004 (22 yrs)", "lugar_nacimiento": "São Paulo, Brazil"
+    }
+  }
+]
