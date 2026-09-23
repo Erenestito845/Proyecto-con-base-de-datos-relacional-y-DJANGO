@@ -6,19 +6,8 @@ def inicio(request):
 
 # Vista del roster/equipo
 def peleadores(request):
-    # En lugar de intentar abrir y leer 'team_khabib.json', 
-    # enviamos una lista vacía a la plantilla temporalmente.
-    # Aquí es exactamente donde inyectaremos el ORM de Django más adelante.
+    # Lista vacía temporal para evitar caídas
     context = {
-        'equipo': []  # Si en tu plantilla usaste otro nombre de variable, cámbialo aquí.
+        'equipo': [] 
     }
-<<<<<<< HEAD
     return render(request, 'ufc/peleadores.html', context)
-<<<<<<< HEAD
-=======
-    return render(request, 'ufc/peleadores.html', context)
->>>>>>> 4c35e3533d9847095ca28460a6a29fd5a95654b5
-=======
-
->>>>>>> 77c61aa490d50b77bb27a88713ee9530dbb14bde
-
