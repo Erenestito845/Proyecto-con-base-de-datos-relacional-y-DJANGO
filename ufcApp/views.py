@@ -14,6 +14,11 @@ def peleadores(request):
     }
 <<<<<<< HEAD
     return render(request, 'ufc/peleadores.html', context)
+<<<<<<< HEAD
 =======
     return render(request, 'ufc/peleadores.html', context)
 >>>>>>> 4c35e3533d9847095ca28460a6a29fd5a95654b5
+=======
+
+>>>>>>> 77c61aa490d50b77bb27a88713ee9530dbb14bde
+
