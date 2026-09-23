@@ -1,23 +1,15 @@
 from django.shortcuts import render
 
-# Create your views here.
-import json
-import os
-from django.conf import settings
-
-
+# Vista principal de MotoGP
 def inicio(request):
-  """Vista de presentación y bienvenida a la categoría de MotoGP"""
-  return render(request, 'motogp/inicio.html')
+    return render(request, 'motogp/inicio.html')
 
-
+# Vista de la parrilla de pilotos
 def pilotos(request):
-  """Vista funcional que lee y procesa el archivo JSON de pilotos"""
-  ruta_json = os.path.join(settings.BASE_DIR, 'data', 'motogp.json')
-
-  with open(ruta_json, 'r', encoding='utf-8') as archivo:
-    lista_pilotos = json.load(archivo)
-
-  # Pasamos los datos leídos a la plantilla a través del contexto
-  contexto = {'pilotos': lista_pilotos, 'total_pilotos': len(lista_pilotos)}
-  return render(request, 'motogp/pilotos.html', contexto)
+    # Desconectamos la lectura del archivo 'motogp.json'
+    # Enviamos una lista vacía para evitar que la página colapse
+    context = {
+        'pilotos': []  # Verifica si en tu plantilla usaste "pilotos" o "equipos"
+    }
+    # Asegúrate de que 'pilotos.html' sea el nombre correcto de tu archivo en la carpeta templates/motogp/
+    return render(request, 'motogp/pilotos.html', context)
