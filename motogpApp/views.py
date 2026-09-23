@@ -13,3 +13,4 @@ def pilotos(request):
     }
     # Asegúrate de que 'pilotos.html' sea el nombre correcto de tu archivo en la carpeta templates/motogp/
     return render(request, 'motogp/pilotos.html', context)
+
