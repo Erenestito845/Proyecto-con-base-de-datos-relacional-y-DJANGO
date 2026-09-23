@@ -12,4 +12,8 @@ def pilotos(request):
         'pilotos': []  # Verifica si en tu plantilla usaste "pilotos" o "equipos"
     }
     # Asegúrate de que 'pilotos.html' sea el nombre correcto de tu archivo en la carpeta templates/motogp/
+<<<<<<< HEAD
     return render(request, 'motogp/pilotos.html', context)
+=======
+    return render(request, 'motogp/pilotos.html', context)
+>>>>>>> 4c35e3533d9847095ca28460a6a29fd5a95654b5

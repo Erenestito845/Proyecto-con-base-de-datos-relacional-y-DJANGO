@@ -12,4 +12,8 @@ def peleadores(request):
     context = {
         'equipo': []  # Si en tu plantilla usaste otro nombre de variable, cámbialo aquí.
     }
+<<<<<<< HEAD
     return render(request, 'ufc/peleadores.html', context)
+=======
+    return render(request, 'ufc/peleadores.html', context)
+>>>>>>> 4c35e3533d9847095ca28460a6a29fd5a95654b5
