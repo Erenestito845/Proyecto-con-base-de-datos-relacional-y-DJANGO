@@ -1,13 +1,14 @@
 from django.shortcuts import render
+from .models import Peleador # Importamos la tabla de peleadores
 
-# Vista principal de UFC
 def inicio(request):
     return render(request, 'ufc/inicio.html')
 
-# Vista del roster/equipo
 def peleadores(request):
-    # Lista vacía temporal para evitar caídas
+    # El ORM extrae todos los registros de la base de datos
+    lista_peleadores = Peleador.objects.all()
+    
     context = {
-        'equipo': [] 
+        'peleadores': lista_peleadores 
     }
     return render(request, 'ufc/peleadores.html', context)

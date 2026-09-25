@@ -40,6 +40,12 @@
     <!-- Título divisor -->
     <h3 class="text-center text-white text-uppercase fw-bold mb-3 mt-5">Luchadores</h3>
 
+    <!-- BOTONES GENERALES (Requisito de Rúbrica) -->
+    <div class="d-flex justify-content-center gap-3 mb-5">
+        <a href="#" class="btn btn-success btn-lg text-uppercase fw-bold px-4 shadow">Agregar Peleador</a>
+        <button class="btn btn-info btn-lg text-white text-uppercase fw-bold px-4 shadow">Buscar</button>
+    </div>
+
     <!-- Grilla de Peleadores -->
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {% for peleador in peleadores %}
@@ -47,36 +53,51 @@
             <div class="card h-100 bg-black border-danger shadow border-2">
                 <!-- Contenedor de la Imagen -->
                 <div style="background-color: #111; height: 350px; overflow: hidden;" class="border-bottom border-danger">
-                    <img src="{% static 'img/'|add:peleador.imagen %}" class="w-100 h-100" style="object-fit: contain; object-position: bottom;" alt="{{ peleador.nombre }}">
+                    {% if peleador.imagen_url %}
+                        <img src="{% static 'img/'|add:peleador.imagen_url %}" class="w-100 h-100" style="object-fit: contain; object-position: bottom;" alt="{{ peleador.nombre }}">
+                    {% else %}
+                        <div class="d-flex justify-content-center align-items-center h-100 text-secondary">Sin imagen</div>
+                    {% endif %}
                 </div>
                 
                 <!-- Datos del Peleador -->
-                <div class="card-body p-4">
+                <div class="card-body p-4 d-flex flex-column">
                     <h4 class="card-title fw-bold text-white text-uppercase mb-1">{{ peleador.nombre }}</h4>
                     
-                    {% if peleador.apodo != "Ninguno" %}
+                    {% if peleador.apodo %}
                         <h6 class="card-subtitle mb-4 text-danger fw-bold">"{{ peleador.apodo }}"</h6>
                     {% else %}
                         <h6 class="card-subtitle mb-4 text-secondary fw-bold">---</h6>
                     {% endif %}
                     
-                    <ul class="list-group list-group-flush border-danger">
+                    <ul class="list-group list-group-flush border-danger mb-4">
                         <li class="list-group-item bg-black text-light border-danger px-0">
-                            <strong class="text-danger">Categoría:</strong> {{ peleador.categoria }}
+                            <strong class="text-danger">Categoría:</strong> {{ peleador.categoria.nombre }}
                         </li>
                         <li class="list-group-item bg-black text-light border-danger px-0">
                             <strong class="text-danger">Récord:</strong> {{ peleador.record }}
                         </li>
                         <li class="list-group-item bg-black text-light border-danger px-0">
-                            <strong class="text-danger">Especialidad:</strong> {{ peleador.especialidad }}
-                        </li>
-                        <li class="list-group-item bg-black text-light border-danger px-0 d-flex justify-content-between align-items-center">
-                            <strong class="text-danger">Estatus:</strong> 
-                            <span class="badge bg-danger text-uppercase p-2">{{ peleador.estatus }}</span>
+                            <strong class="text-danger">Gimnasio:</strong> 
+                            {% if peleador.gimnasio %}
+                                {{ peleador.gimnasio.nombre }}
+                            {% else %}
+                                Sin equipo
+                            {% endif %}
                         </li>
                     </ul>
+
+                    <!-- BOTONES DE ACCIÓN INDIVIDUAL (Requisito de Rúbrica) -->
+                    <div class="d-flex justify-content-between mt-auto">
+                        <a href="#" class="btn btn-warning fw-bold text-uppercase w-100 me-2">Modificar</a>
+                        <a href="#" class="btn btn-danger fw-bold text-uppercase w-100">Eliminar</a>
+                    </div>
                 </div>
             </div>
+        </div>
+        {% empty %}
+        <div class="col-12 text-center py-5">
+            <h4 class="text-white-50">No hay peleadores registrados en la base de datos.</h4>
         </div>
         {% endfor %}
     </div>
