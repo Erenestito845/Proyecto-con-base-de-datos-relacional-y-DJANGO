@@ -51,14 +51,21 @@
         {% for peleador in peleadores %}
         <div class="col">
             <div class="card h-100 bg-black border-danger shadow border-2">
-                <!-- Contenedor de la Imagen -->
-                <div style="background-color: #111; height: 350px; overflow: hidden;" class="border-bottom border-danger">
-                    {% if peleador.imagen_url %}
-                        <img src="{% static 'img/'|add:peleador.imagen_url %}" class="w-100 h-100" style="object-fit: contain; object-position: bottom;" alt="{{ peleador.nombre }}">
-                    {% else %}
-                        <div class="d-flex justify-content-center align-items-center h-100 text-secondary">Sin imagen</div>
-                    {% endif %}
-                </div>
+                
+<!-- Contenedor de la Imagen -->
+<div style="background-color: #111; height: 350px; overflow: hidden;" class="border-bottom border-danger">
+    {% if peleador.imagen_url %}
+        {% if 'http' in peleador.imagen_url %}
+            <!-- Carga la imagen directamente desde el link de internet -->
+            <img src="{{ peleador.imagen_url }}" class="w-100 h-100" style="object-fit: contain; object-position: bottom;" alt="{{ peleador.nombre }}">
+        {% else %}
+            <!-- Carga la imagen desde tu carpeta local /static/img/ -->
+            <img src="{% static 'img/'|add:peleador.imagen_url %}" class="w-100 h-100" style="object-fit: contain; object-position: bottom;" alt="{{ peleador.nombre }}">
+        {% endif %}
+    {% else %}
+        <div class="d-flex justify-content-center align-items-center h-100 text-secondary">Sin imagen</div>
+    {% endif %}
+</div>
                 
                 <!-- Datos del Peleador -->
                 <div class="card-body p-4 d-flex flex-column">
