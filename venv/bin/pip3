@@ -1,4 +1,4 @@
-#!/home/gabriel/Descargas/evaluacion1/venv/bin/python3
+#!/home/gabriel/Documentos/Proyecto-con-base-de-datos-relacional-y-DJANGO/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
